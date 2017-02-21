@@ -4,6 +4,7 @@ var zonesData = {
     lthr: 0,
     powerZones: [],
     lthrZones: [],
+    // TODO: set this as a single DNR method
     setPowerZones: function (ftp) {
         this.ftp = ftp;
         var mult = [0, .55, .56, .75, .76, .90, .91, 1.05, 1.06, 1.20, 1.21, 1.50, 1.51];
@@ -25,8 +26,8 @@ var zonesData = {
         }
         calculateZones.call(this);
     },
+    // todo: DNR the get methods
     getPowerZoneTableData: function () {
-    // TODO:
         // Table cells where power goes
         var tableDataPower = Array.prototype.slice.call(document.querySelectorAll('[data-group-power]'));
         // set zoneData as context for this method
