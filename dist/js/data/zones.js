@@ -18,7 +18,7 @@ var zonesData = {
         calculateZones.call(this);
     },
     setHeartRaterZones: function (ftp) {
-        var mult = [0, .55, .56, .75, .76, .85, .86, .95, .96, 1.05, 1.06, 1.20, 1.21, 1.50];
+        var mult = [0, .85, .86, .90, .91, .95, .96,.99, 1, 1.02, 1.03, 1.06, 1.06];
 
         function calculateZones() {
 
@@ -31,7 +31,7 @@ var zonesData = {
         calculateZones.call(this);
     },
     getPowerZoneTableData: function () {
-    // TODO
+    // TODO:
         // Table cells where power goes
         var tableDataPower = Array.prototype.slice.call(document.querySelectorAll('[data-group-power]'));
         // set zoneData as context for this method
