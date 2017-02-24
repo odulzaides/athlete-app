@@ -92,7 +92,10 @@ textarea {
    ========================================================================== */
 
 .row-content {
-    margin-left:-9em;
+    /*margin-left:-9em;*/
+}
+.table {
+    border:1px solid grey;
 }
 
 

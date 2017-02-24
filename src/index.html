@@ -35,25 +35,29 @@
         <h3>Enter you data here</h3>
 
         <div class="row row-content">
-            <div class="form-horizontal" role="form">
-                <div class="form-group">
-                    <label class="col-md-2 control-label " for="ftp">FTP: </label>
-                    <div class="col-md-2">
-                        <input name="ftp" type="text" class="form-control" id="ftp" onblur="changePower()"/>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-md-2 control-label" for="lthr">LTHR:</label>
+            <div>
+                <div class="form-horizontal " role="form">
+                    <div class="form-group">
+                        <label class="col-md-2 control-label " for="ftp">FTP: </label>
 
-                    <div class="col-md-2">
-                        <input name="lthr" type="text" class="form-control" id="lthr" onblur="changeHeartRate()"/>
+                        <div class="col-md-2">
+                            <input name="ftp" type="text" class="form-control" id="ftp" onchange="changePower()"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label" for="lthr">LTHR:</label>
+
+                        <div class="col-md-2 ">
+                            <input name="lthr" type="text" class="form-control" id="lthr" onchange="changeHeartRate()"/>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
         <!-- Zone table -->
         <section class="row">
-            <div class="col-md-8">
+            <div class="col-md-6 ">
                 <table class="table table-striped">
                     <thead>
                     <tr>

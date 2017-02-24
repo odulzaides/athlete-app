@@ -8,6 +8,7 @@ var zonesData = {
     setPowerZones: function (ftp) {
         this.ftp = ftp;
         var mult = [0, .55, .56, .75, .76, .90, .91, 1.05, 1.06, 1.20, 1.21, 1.50, 1.51];
+        this.powerZones = [];
 
         function calculateZones() {
             for (var i = 0; i < mult.length; i++) {
@@ -20,7 +21,7 @@ var zonesData = {
     setHeartRaterZones: function (lthr) {
         this.lthr = lthr;
         var mult = [0, .85, .86, .90, .91, .95, .96, .99, 1, 1.02, 1.03, 1.06, 1.06];
-
+        this.lthrZones = [];
         function calculateZones() {
             for (var i = 0; i < mult.length; i++) {
 
@@ -36,11 +37,11 @@ var zonesData = {
         var tableDataPower = Array.prototype.slice.call(document.querySelectorAll('[data-group-power]'));
         // set zoneData as context for this method
         var that = this;
-        var tableDataHeartRate = document.querySelectorAll('[data-group-lthr]');
+
         // Display power zones on table
         var writePowerZones = function () {
-            var powerArr = that.powerZones;
             //var powerCell = tableDataPower;
+            var powerArr = that.powerZones;
             for (var i = 0; i <= powerArr.length; i += 2) {
                 var low = i;
                 var high = i + 1;
@@ -96,8 +97,9 @@ changePower = function (powerInput) {
 
 // display updated HR data
 changeHeartRate = function (powerInput) {
-    var lthrInput = document.querySelector('#lthr').value;
-    zonesData.setHeartRaterZones(152);
+    var lthrInput = $('#lthr').val();
+    console.log(lthrInput);
+    zonesData.setHeartRaterZones(lthrInput);
     zonesData.getHeartRateZoneTableData();
 
 }
