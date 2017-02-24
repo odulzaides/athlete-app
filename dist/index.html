@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html class="no-js" lang="">
 <head>
@@ -23,6 +24,8 @@
 <![endif]-->
 
 <!-- Add your site or application content here -->
+
+
 <div class="container">
 
     <div class="row">
@@ -35,26 +38,29 @@
         <h3>Enter you data here</h3>
 
         <div class="row row-content">
-            <div class="form-horizontal" role="form">
-                <div class="form-group">
-                    <label class="col-md-2 control-label " for="ftp">FTP: </label>
+            <div>
+                <div class="form-horizontal " role="form">
+                    <div class="form-group">
+                        <label class="col-md-2 control-label " for="ftp">FTP: </label>
 
-                    <div class="col-md-2">
-                        <input name="ftp" type="text" class="form-control" id="ftp"/>
+                        <div class="col-md-2">
+                            <input name="ftp" type="text" class="form-control" id="ftp" onchange="changePower()"/>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-md-2 control-label" for="lthr">LTHR:</label>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label" for="lthr">LTHR:</label>
 
-                    <div class="col-md-2">
-                        <input name="lthr" type="text" class="form-control" id="lthr"/>
+                        <div class="col-md-2 ">
+                            <input name="lthr" type="text" class="form-control" id="lthr" onchange="changeHeartRate()"/>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
         <!-- Zone table -->
         <section class="row">
-            <div class="col-md-8">
+            <div class="col-md-6 ">
                 <table class="table table-striped">
                     <thead>
                     <tr>
@@ -66,44 +72,44 @@
                     <tbody>
                     <tr>
                         <th>Recovery</th>
-                        <td data-group-power="power">0 - 126</td>
-                        <td data-group-lthr="lthr">0 - 129</td>
+                        <td data-group-power="power"></td>
+                        <td data-group-lthr="lthr"></td>
 
                     </tr>
                     <tr>
                         <th>Endurance</th>
-                        <td data-group-power="power">128 - 172</td>
-                        <td data-group-lthr="lthr">130 - 136</td>
+                        <td data-group-power="power"></td>
+                        <td data-group-lthr="lthr"></td>
 
                     </tr>
                     <tr>
                         <th>Tempo</th>
-                        <td data-group-power="power">174 - 207</td>
-                        <td data-group-lthr="lthr">138 - 144</td>
+                        <td data-group-power="power"></td>
+                        <td data-group-lthr="lthr"></td>
 
                     </tr>
                     <tr>
                         <th>Threshold</th>
-                        <td data-group-power="power">209 - 241</td>
-                        <td data-group-lthr="lthr">145 - 150</td>
+                        <td data-group-power="power"></td>
+                        <td data-group-lthr="lthr"></td>
 
                     </tr>
                     <tr>
                         <th>VO2</th>
-                        <td data-group-power="power">243 - 276</td>
-                        <td data-group-lthr="lthr">152 - 155</td>
+                        <td data-group-power="power"></td>
+                        <td data-group-lthr="lthr"></td>
 
                     </tr>
                     <tr>
                         <th>Anaerobic</th>
-                        <td data-group-power="power">278 - 345</td>
-                        <td data-group-lthr="lthr">156 - 161</td>
+                        <td data-group-power="power"></td>
+                        <td data-group-lthr="lthr"></td>
 
                     </tr>
                     <tr>
                         <th>Neuromuscular</th>
-                        <td data-group-power="power">Above - 347</td>
-                        <td data-group-lthr="lthr">Above - 161</td>
+                        <td data-group-power="power"></td>
+                        <td data-group-lthr="lthr"></td>
 
                     </tr>
                     </tbody>

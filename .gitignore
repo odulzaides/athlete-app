@@ -1,3 +1,7 @@
 archive
 node_modules
+<<<<<<< HEAD
 
+=======
+.idea/
+>>>>>>> refactor_set_methods

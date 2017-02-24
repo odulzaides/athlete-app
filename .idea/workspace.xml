@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="936ab988-ec17-4bbe-8a96-105a4f837349" name="Default" comment="" />
+=======
+    <list default="true" id="936ab988-ec17-4bbe-8a96-105a4f837349" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/main.css" afterPath="$PROJECT_DIR$/src/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/data/zones.js" afterPath="$PROJECT_DIR$/src/js/data/zones.js" />
+    </list>
+>>>>>>> refactor_set_methods
     <ignored path="site-for-testing.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,10 +36,17 @@
             <entry file="file://$PROJECT_DIR$/src/index.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="-4.375">
+<<<<<<< HEAD
                   <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
                   <folding>
                     <marker date="1487907033000" expanded="true" signature="735:888" placeholder="..." />
                     <marker date="1487907033000" expanded="true" signature="828:856" placeholder="..." />
+=======
+                  <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+                  <folding>
+                    <marker date="1487905253000" expanded="true" signature="735:888" placeholder="..." />
+                    <marker date="1487905253000" expanded="true" signature="828:856" placeholder="..." />
+>>>>>>> refactor_set_methods
                   </folding>
                 </state>
               </provider>
@@ -49,8 +65,13 @@
           <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/package.json">
               <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
                 <state vertical-scroll-proportion="0.509839">
                   <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+=======
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> refactor_set_methods
                   <folding />
                 </state>
               </provider>
@@ -60,11 +81,16 @@
             <entry file="file://$PROJECT_DIR$/src/css/main.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="-5.160714">
+<<<<<<< HEAD
                   <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
                   <folding>
                     <marker date="1487907033000" expanded="true" signature="1856:1862" placeholder="{...}" />
                     <marker date="1487907033000" expanded="true" signature="1878:1881" placeholder="{...}" />
                   </folding>
+=======
+                  <caret line="95" column="1" selection-start-line="95" selection-start-column="1" selection-end-line="95" selection-end-column="1" />
+                  <folding />
+>>>>>>> refactor_set_methods
                 </state>
               </provider>
             </entry>
@@ -83,7 +109,11 @@
             <entry file="file://$PROJECT_DIR$/src/js/data/zones.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
                   <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+=======
+                  <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+>>>>>>> refactor_set_methods
                   <folding />
                 </state>
               </provider>
@@ -96,9 +126,17 @@
           <file leaf-file-name="zones.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/js/data/zones.js">
               <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
                 <state vertical-scroll-proportion="0.59532374">
                   <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
                   <folding />
+=======
+                <state vertical-scroll-proportion="0.73021585">
+                  <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#359#506#0" expanded="false" />
+                  </folding>
+>>>>>>> refactor_set_methods
                 </state>
               </provider>
             </entry>
@@ -279,6 +317,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< HEAD
+=======
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-for-testing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-for-testing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+>>>>>>> refactor_set_methods
               <option name="myItemId" value="dist" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -408,10 +467,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1003" extended-state="6" />
+<<<<<<< HEAD
     <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32930845" sideWeight="0.4966118" order="7" side_tool="false" content_ui="tabs" />
+=======
+    <editor active="true" />
+    <layout>
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32930845" sideWeight="0.4966118" order="7" side_tool="false" content_ui="tabs" />
+>>>>>>> refactor_set_methods
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892805" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17252396" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -464,8 +530,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+<<<<<<< HEAD
             <marker date="1487907033000" expanded="true" signature="735:888" placeholder="..." />
             <marker date="1487907033000" expanded="true" signature="828:856" placeholder="..." />
+=======
+            <marker date="1487905253000" expanded="true" signature="735:888" placeholder="..." />
+            <marker date="1487905253000" expanded="true" signature="828:856" placeholder="..." />
+>>>>>>> refactor_set_methods
           </folding>
         </state>
       </provider>
@@ -474,10 +545,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="94" column="18" selection-start-line="94" selection-start-column="18" selection-end-line="94" selection-end-column="18" />
+<<<<<<< HEAD
           <folding>
             <marker date="1487907033000" expanded="true" signature="1856:1862" placeholder="{...}" />
             <marker date="1487907033000" expanded="true" signature="1878:1881" placeholder="{...}" />
           </folding>
+=======
+          <folding />
+>>>>>>> refactor_set_methods
         </state>
       </provider>
     </entry>
@@ -536,11 +611,16 @@
     <entry file="file://$PROJECT_DIR$/src/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.160714">
+<<<<<<< HEAD
           <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
           <folding>
             <marker date="1487907033000" expanded="true" signature="1856:1862" placeholder="{...}" />
             <marker date="1487907033000" expanded="true" signature="1878:1881" placeholder="{...}" />
           </folding>
+=======
+          <caret line="95" column="1" selection-start-line="95" selection-start-column="1" selection-end-line="95" selection-end-column="1" />
+          <folding />
+>>>>>>> refactor_set_methods
         </state>
       </provider>
     </entry>
@@ -555,7 +635,11 @@
     <entry file="file://$PROJECT_DIR$/src/js/data/zones.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
           <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+=======
+          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+>>>>>>> refactor_set_methods
           <folding />
         </state>
       </provider>
@@ -563,10 +647,17 @@
     <entry file="file://$PROJECT_DIR$/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.375">
+<<<<<<< HEAD
           <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
           <folding>
             <marker date="1487907033000" expanded="true" signature="735:888" placeholder="..." />
             <marker date="1487907033000" expanded="true" signature="828:856" placeholder="..." />
+=======
+          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+          <folding>
+            <marker date="1487905253000" expanded="true" signature="735:888" placeholder="..." />
+            <marker date="1487905253000" expanded="true" signature="828:856" placeholder="..." />
+>>>>>>> refactor_set_methods
           </folding>
         </state>
       </provider>
@@ -581,8 +672,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.509839">
           <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+=======
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> refactor_set_methods
           <folding />
         </state>
       </provider>
