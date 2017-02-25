@@ -1,0 +1,144 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Athlete Zones</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!--<link rel="stylesheet" href="css/normalize.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Athlete Profile</h1>
+        </div>
+    </div>
+    <!-- FTP, LTHR input form -->
+    <div class="container">
+        <h3>Enter you data here</h3>
+
+        <div class="row row-content">
+            <div class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label class="col-md-2 control-label " for="ftp">FTP: </label>
+                    <div class="col-md-2">
+                        <input name="ftp" type="text" class="form-control" id="ftp"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label" for="lthr">LTHR:</label>
+
+                    <div class="col-md-2">
+                        <input name="lthr" type="text" class="form-control" id="lthr"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Zone table -->
+        <section class="row">
+            <div class="col-md-8">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>Zone</th>
+                        <th>Power</th>
+                        <th>Heart Rate</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th>Recovery</th>
+                        <td data-group-power="power">0 - 126</td>
+                        <td data-group-lthr="lthr">0 - 129</td>
+
+                    </tr>
+                    <tr>
+                        <th>Endurance</th>
+                        <td data-group-power="power">128 - 172</td>
+                        <td data-group-lthr="lthr">130 - 136</td>
+
+                    </tr>
+                    <tr>
+                        <th>Tempo</th>
+                        <td data-group-power="power">174 - 207</td>
+                        <td data-group-lthr="lthr">138 - 144</td>
+
+                    </tr>
+                    <tr>
+                        <th>Threshold</th>
+                        <td data-group-power="power">209 - 241</td>
+                        <td data-group-lthr="lthr">145 - 150</td>
+
+                    </tr>
+                    <tr>
+                        <th>VO2</th>
+                        <td data-group-power="power">243 - 276</td>
+                        <td data-group-lthr="lthr">152 - 155</td>
+
+                    </tr>
+                    <tr>
+                        <th>Anaerobic</th>
+                        <td data-group-power="power">278 - 345</td>
+                        <td data-group-lthr="lthr">156 - 161</td>
+
+                    </tr>
+                    <tr>
+                        <th>Neuromuscular</th>
+                        <td data-group-power="power">Above - 347</td>
+                        <td data-group-lthr="lthr">Above - 161</td>
+
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function (b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+            function () {
+                (b[l].q = b[l].q || []).push(arguments)
+            });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = 'https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X', 'auto');
+    ga('send', 'pageview');
+</script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/data/zones.js"></script>
+<script src="js/main.js"></script>
+
+
+</body>
+</html>

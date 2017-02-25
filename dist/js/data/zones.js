@@ -103,6 +103,17 @@ changeHeartRate = function (powerInput) {
     zonesData.getHeartRateZoneTableData();
 
 }
-// display data
+
+
+
+//Chart
+// canvas element
+var ctx = document.querySelector('#progress-chart');
+
+//create chart
+var progressChart = new Chart(ctx, {
+    type:'line'
+});
+
 
 

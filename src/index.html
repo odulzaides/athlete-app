@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html class="no-js" lang="">
 <head>
@@ -34,10 +33,11 @@
         </div>
     </div>
     <!-- FTP, LTHR input form -->
-    <div class="container">
-        <h3>Enter you data here</h3>
 
-        <div class="row row-content">
+    <h3>Enter you data here</h3>
+
+    <div class="row">
+        <div class="row">
             <div>
                 <div class="form-horizontal " role="form">
                     <div class="form-group">
@@ -57,70 +57,79 @@
                 </div>
             </div>
 
+
         </div>
-        <!-- Zone table -->
-        <section class="row">
-            <div class="col-md-6 ">
-                <table class="table table-striped">
-                    <thead>
-                    <tr>
-                        <th>Zone</th>
-                        <th>Power</th>
-                        <th>Heart Rate</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th>Recovery</th>
-                        <td data-group-power="power"></td>
-                        <td data-group-lthr="lthr"></td>
 
-                    </tr>
-                    <tr>
-                        <th>Endurance</th>
-                        <td data-group-power="power"></td>
-                        <td data-group-lthr="lthr"></td>
-
-                    </tr>
-                    <tr>
-                        <th>Tempo</th>
-                        <td data-group-power="power"></td>
-                        <td data-group-lthr="lthr"></td>
-
-                    </tr>
-                    <tr>
-                        <th>Threshold</th>
-                        <td data-group-power="power"></td>
-                        <td data-group-lthr="lthr"></td>
-
-                    </tr>
-                    <tr>
-                        <th>VO2</th>
-                        <td data-group-power="power"></td>
-                        <td data-group-lthr="lthr"></td>
-
-                    </tr>
-                    <tr>
-                        <th>Anaerobic</th>
-                        <td data-group-power="power"></td>
-                        <td data-group-lthr="lthr"></td>
-
-                    </tr>
-                    <tr>
-                        <th>Neuromuscular</th>
-                        <td data-group-power="power"></td>
-                        <td data-group-lthr="lthr"></td>
-
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
     </div>
+    <!-- Zone table -->
+    <section class="row">
+        <div class="col-md-4">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Zone</th>
+                    <th>Power</th>
+                    <th>Heart Rate</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th>Recovery</th>
+                    <td data-group-power="power"></td>
+                    <td data-group-lthr="lthr"></td>
+
+                </tr>
+                <tr>
+                    <th>Endurance</th>
+                    <td data-group-power="power"></td>
+                    <td data-group-lthr="lthr"></td>
+
+                </tr>
+                <tr>
+                    <th>Tempo</th>
+                    <td data-group-power="power"></td>
+                    <td data-group-lthr="lthr"></td>
+
+                </tr>
+                <tr>
+                    <th>Threshold</th>
+                    <td data-group-power="power"></td>
+                    <td data-group-lthr="lthr"></td>
+
+                </tr>
+                <tr>
+                    <th>VO2</th>
+                    <td data-group-power="power"></td>
+                    <td data-group-lthr="lthr"></td>
+
+                </tr>
+                <tr>
+                    <th>Anaerobic</th>
+                    <td data-group-power="power"></td>
+                    <td data-group-lthr="lthr"></td>
+
+                </tr>
+                <tr>
+                    <th>Neuromuscular</th>
+                    <td data-group-power="power"></td>
+                    <td data-group-lthr="lthr"></td>
+
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-6 col-xs-12">
+
+            <canvas id="progress-chart" width="100%" height="55"></canvas>
+        </div>
+    </section>
+
 </div>
 
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+<script src=../node_modules/chart.js/dist/Chart.bundle.js></script>
+<script src="js/progress.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 
