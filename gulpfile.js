@@ -29,7 +29,7 @@ gulp.task('archive:zip', function (done) {
     var files = require('glob').sync('**/*.*', {
         'cwd': dirs.dist,
         'dot': true // include hidden files
-    })
+    });
     var output = fs.createWriteStream(archiveName);
 
     archiver.on('error', function (error) {
