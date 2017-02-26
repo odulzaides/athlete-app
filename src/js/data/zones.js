@@ -114,7 +114,7 @@ var ftpOverTime = zonesData.ftp;
 var lthrOverTime = zonesData.lthr;
 
 var data = {
-    labels: ["January", "February", "March", "April", "May", "June", "July"],
+    labels: ["January", "February", "March", "April", "May", "June", "July"], // FIXME: get dates from zoneData.ftp/zoneData array of objects
     datasets: [
         {
             label: "FTP",
