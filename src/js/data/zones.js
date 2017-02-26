@@ -1,7 +1,7 @@
 // zones  object
 var zonesData = {
-    ftp: 0,
-    lthr: 0,
+    ftp: [230,232,240,250],
+    lthr: [144,145,148,152],// TODO: fix this array so that it is pushed from the set methods
     powerZones: [],
     lthrZones: [],
     // TODO: set this as a single DNR method
@@ -105,14 +105,92 @@ changeHeartRate = function (powerInput) {
 }
 
 
-
 //Chart
 // canvas element
 var ctx = document.querySelector('#progress-chart');
 
+// Data for Chart
+var ftpOverTime = zonesData.ftp;
+var lthrOverTime = zonesData.lthr;
+
+var data = {
+    labels: ["January", "February", "March", "April", "May", "June", "July"],
+    datasets: [
+        {
+            label: "FTP",
+            fill: false,
+            lineTension: 0.1,
+            backgroundColor: "rgba(75,192,192,0.4)",
+            borderColor: "rgba(75,192,192,1)",
+            borderCapStyle: 'butt',
+            borderDash: [],
+            borderDashOffset: 0.0,
+            borderJoinStyle: 'miter',
+            pointBorderColor: "rgba(75,192,192,1)",
+            pointBackgroundColor: "#fff",
+            pointBorderWidth: 1,
+            pointHoverRadius: 5,
+            pointHoverBackgroundColor: "rgba(75,192,192,1)",
+            pointHoverBorderColor: "rgba(220,220,220,1)",
+            pointHoverBorderWidth: 2,
+            pointRadius: 1,
+            pointHitRadius: 10,
+            data: ftpOverTime,
+            spanGaps: false,
+        },
+        {
+            label: "LTHR",
+            fill: false,
+            lineTension: 0.1,
+            backgroundColor: "rgba(255,0,0,0.4)",
+            borderColor: "rgba(255,0,0,0.4)",
+            borderCapStyle: 'butt',
+            borderDash: [],
+            borderDashOffset: 0.0,
+            borderJoinStyle: 'miter',
+            pointBorderColor: "rgba(255,0,0,0.4)",
+            pointBackgroundColor: "#fff",
+            pointBorderWidth: 1,
+            pointHoverRadius: 5,
+            pointHoverBackgroundColor: "rgba(255,0,0,0.4)",
+            pointHoverBorderColor: "rgba(255,0,0,0.4)",
+            pointHoverBorderWidth: 2,
+            pointRadius: 1,
+            pointHitRadius: 10,
+            data: lthrOverTime,
+            spanGaps: false,
+        }
+
+    ]
+};
+
 //create chart
 var progressChart = new Chart(ctx, {
-    type:'line'
+    type: 'line',
+    data: data,
+    options: {
+        responsive: true,
+        title: {
+            display: true,
+            text: 'FTP and LTHR Porgress Chart'
+        },
+        scales: {
+            xAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Date'
+                }
+            }],
+            yAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Value'
+                }
+            }]
+        }
+    }
 });
 
 
