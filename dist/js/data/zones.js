@@ -1,9 +1,59 @@
 // zones  object
 var zonesData = {
-    testResults: [{"10-10-2016": [230, 152]}, {"11-11-2016": [230, 152]}, {"12-12-2016": [230, 152]}, {"1-10-2017": [230, 152]}, {"2-10-2017": [230, 152]}, {"3-10-2017": [230, 152]}],
+    testResults: [
+        {
+            date: [
+                '10-2016',
+                230,
+                152
+            ]
+        },
+        {
+            date: [
+                '11-2016',
+                235,
+                152
+            ]
+        },
+        {
+            date: [
+                '12-2016',
+                239,
+                153
+            ]
+        },
+        {
+            date: [
+                '1-2017',
+                242,
+                154
+            ]
+        },
+        {
+            date: [
+                '2-2017',
+                250,
+                158
+            ]
+        },
+        {
+            date: [
+                '3-2017',
+                255,
+                160
+            ]
+        },
+        {
+            date: [
+                '4-2017',
+                355,
+                175
+            ]
+        }
+    ],
     powerZones: [],
     lthrZones: [],
-    // TODO: set this as a single DNR method
+    // TODO: set this as a single DNR method, possibly take out of the object or put in prototype
     setPowerZones: function (ftp) {
         this.ftp = ftp;
         var mult = [0, .55, .56, .75, .76, .90, .91, 1.05, 1.06, 1.20, 1.21, 1.50, 1.51];
@@ -80,21 +130,9 @@ var zonesData = {
     }
 }
 
+
 //Helpers
-function getKeys() {
-    var labels = [];
 
-    function setLabels() {
-        var labelData = zonesData['testResults'];
-        for (var i = 0; i < labelData.length; i++) {
-            var item = Object.keys(labelData[i]);
-            labels.push(item[0]);
-        }
-    }
-
-    setLabels();
-    return labels;
-}
 
 
 // set data
@@ -118,14 +156,37 @@ var changeHeartRate = function (powerInput) {
 }
 
 
-//Chart
+///////////////////////////
+///     Chart        /////
+//////////////////////////
+
+// Setup labels
+var Labels = function () {
+
+    var testDate = [],
+        testFTP = [],
+        testLTHR = [],
+        result = zonesData['testResults'].map(function (a) {
+            testDate.push(a.date[0]);
+            testFTP.push(a.date[1]);
+            testLTHR.push(a.date[2]);
+            //return testDate, testFTP, testLTHR;
+        });
+    console.log(testDate, testFTP, testLTHR);
+    return {
+        testDate:testDate,
+        testFTP:testFTP,
+        testLTHR:testLTHR
+    }
+}();
+
 // canvas element
 var ctx = document.querySelector('#progress-chart');
 
 // Data for Chart
 
 var data = {
-    labels: getKeys(), // FIXME: get dates from zoneData.ftp/zoneData array of objects
+    labels:Labels.testDate , // FIXME: get dates from zoneData.ftp/zoneData array of objects
     datasets: [
         {
             label: "FTP",
@@ -146,7 +207,7 @@ var data = {
             pointHoverBorderWidth: 2,
             pointRadius: 1,
             pointHitRadius: 10,
-            data: ftp,
+            data: Labels.testFTP,
             spanGaps: false,
         },
         {
@@ -168,7 +229,7 @@ var data = {
             pointHoverBorderWidth: 2,
             pointRadius: 1,
             pointHitRadius: 10,
-            data: lthr,
+            data: Labels.testLTHR,
             spanGaps: false,
         }
 
