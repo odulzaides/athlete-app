@@ -99,7 +99,20 @@ textarea {
    ========================================================================== */
 
 .row-content {
-    margin-left:-9em;
+    margin:0 auto;
+}
+#test-data-form {
+    border:2px solid black;
+    border-radius:10px;
+    background:rgba(0,0,0,0.2);
+    width:26.66666%;
+    margin-bottom: 2em;
+}
+.ftp-lthr-labels {
+    text-align: right;
+}
+.table {
+    border:1px solid grey;
 }
 
 
