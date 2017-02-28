@@ -90,7 +90,17 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+#navbar-brand-img {
+    float:left;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+    overflow:hidden;
+    margin-top: -12px;
+}
+.navbar-brand {
+    font-size:2em;
+}
 .row-content {
     margin:0 auto;
 }
