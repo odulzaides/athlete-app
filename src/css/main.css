@@ -114,6 +114,10 @@ textarea {
 .ftp-lthr-labels {
     text-align: right;
 }
+.btn {
+    margin-top:1em;
+    padding:1em;
+}
 .table {
     border:1px solid grey;
 }

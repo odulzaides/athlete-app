@@ -53,34 +53,25 @@ var zonesData = {
     ],
     powerZones: [],
     lthrZones: [],
-    // TODO: set this as a single DNR method, possibly take out of the object or put in prototype
-    setPowerZones: function (ftp) {
-        this.ftp = ftp;
-        var mult = [0, .55, .56, .75, .76, .90, .91, 1.05, 1.06, 1.20, 1.21, 1.50, 1.51];
-        this.powerZones = [];
+    /* TODO: 1. setup the submit button to
+                a. save ftp and lthr to 'testResults' localStorage
+                b. assign Json.parse(localStorage) to the testResults: prop
+                c. make a user ID localStorage you can use.
 
-        function calculateZones() {
-            for (var i = 0; i < mult.length; i++) {
-                this.powerZones.push(Math.floor(this.ftp * mult[i]));
+
+      */
+    setZones: function (typeOfMetric) {
+        return function (metric) {
+            zones = [];
+            if (typeOfMetric === 'ftp') {
+                zonesData.powerZones = [0, .55, .56, .75, .76, .90, .91, 1.05, 1.06, 1.20, 1.21, 1.50, 1.51].map((item) => Math.floor(item * metric));
+            } else {
+                zonesData.lthrZones = [0, .85, .86, .90, .91, .95, .96, .99, 1, 1.02, 1.03, 1.06, 1.06].map((item) => Math.floor(item * metric));
             }
         }
-
-        calculateZones.call(this);
     },
-    setHeartRaterZones: function (lthr) {
-        this.lthr = lthr;
-        var mult = [0, .85, .86, .90, .91, .95, .96, .99, 1, 1.02, 1.03, 1.06, 1.06];
-        this.lthrZones = [];
-        function calculateZones() {
-            for (var i = 0; i < mult.length; i++) {
-
-                this.lthrZones.push(Math.floor(this.lthr * mult[i]));
-            }
-        }
-
-        calculateZones.call(this);
-    },
-    // todo: DNR the get methods
+    // TODO: 2. refactor get methods to not repeat.
+    //
     getPowerZoneTableData: function () {
         // Table cells where power goes
         var tableDataPower = Array.prototype.slice.call(document.querySelectorAll('[data-group-power]'));
@@ -134,23 +125,22 @@ var zonesData = {
 //Helpers
 
 
-
 // set data
 //zonesData.setPowerZones(2130);
 
 //Display updated power data
-var changePower = function (powerInput) {
-    var powerInput = document.querySelector('#ftp').value;
-    zonesData.setPowerZones(powerInput);
+var changePower = function () {
+    var ftpinput = $('#ftp').val();
+    var setZones = zonesData.setZones('ftp');
+    setZones(ftpinput);
     zonesData.getPowerZoneTableData();
-
 }
 
 // display updated HR data
-var changeHeartRate = function (powerInput) {
+var changeHeartRate = function () {
     var lthrInput = $('#lthr').val();
-    console.log(lthrInput);
-    zonesData.setHeartRaterZones(lthrInput);
+    var setZones = zonesData.setZones('lthr')
+    setZones(lthrInput);
     zonesData.getHeartRateZoneTableData();
 
 }
@@ -172,11 +162,11 @@ var Labels = function () {
             testLTHR.push(a.date[2]);
             //return testDate, testFTP, testLTHR;
         });
-    console.log(testDate, testFTP, testLTHR);
+    //console.log(testDate, testFTP, testLTHR);
     return {
-        testDate:testDate,
-        testFTP:testFTP,
-        testLTHR:testLTHR
+        testDate: testDate,
+        testFTP: testFTP,
+        testLTHR: testLTHR
     }
 }();
 
@@ -186,7 +176,7 @@ var ctx = document.querySelector('#progress-chart');
 // Data for Chart
 
 var data = {
-    labels:Labels.testDate , // FIXME: get dates from zoneData.ftp/zoneData array of objects
+    labels: Labels.testDate, // FIXME: get dates from zoneData.ftp/zoneData array of objects
     datasets: [
         {
             label: "FTP",
@@ -208,7 +198,7 @@ var data = {
             pointRadius: 1,
             pointHitRadius: 10,
             data: Labels.testFTP,
-            spanGaps: false,
+            spanGaps: false
         },
         {
             label: "LTHR",
@@ -230,7 +220,7 @@ var data = {
             pointRadius: 1,
             pointHitRadius: 10,
             data: Labels.testLTHR,
-            spanGaps: false,
+            spanGaps: false
         }
 
     ]
