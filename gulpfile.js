@@ -171,6 +171,12 @@ gulp.task('build', function (done) {
 
 gulp.task('watch', function(){
    gulp.watch('./src/**/*.*', ['default']);
+
+
+
+
+
+
 });
 
 gulp.task('default', ['build', 'watch']);

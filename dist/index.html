@@ -30,7 +30,7 @@
     <div class="container">
             <a  class="navbar-brand" href="#">
                 <img src="./img/brand-logo.png" id="navbar-brand-img" >
-                <em>Fit-track</em></a>
+                <em>Fit-Track</em></a>
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -70,14 +70,13 @@
     </div>
     <!-- FTP, LTHR input form -->
 
-    <h3>Enter you data here</h3>
+    <h3>Enter your test resultsgulp archive here</h3>
 
     <div class="row">
-        <div class="row row-content">
             <div>
                 <div class="form-horizontal form-align" role="form">
                     <div class="form-group">
-                        <label class="col-md-1  ftp-lthr-labels " for="test-date">Test Date </label>
+                        <label class="col-md-1  ftp-lthr-labels " for="test-date">Test <br>Date </label>
 
                         <div class="col-md-3">
                             <input name="ftp" type="datetime-local" class="form-control" id="test-date"
@@ -101,18 +100,20 @@
                             <!-- TODO: Add button to submit form. Need to write method to save lthr and ftp in an object in n array by test date! ie zoneData:testResults:[{10-20-16: [230,152]}, {11-11-16:[234,154]}].-->
                         </div>
                     </div>
+                    <div class="form-group-lg col-md-4 col-xs-12">
+                    <button class="btn btn-info  btn-block btn-submit">Submit Test Results</button>
+                        <br>
+                    </div>
                 </div>
             </div>
-
-
-        </div>
-
     </div>
     <!-- Zone table -->
     <section class="row">
         <div class="col-md-5 col-xs-12">
             <table class="table table-striped">
                 <thead>
+                <tr>
+                    <th colspan="3" id="table-title">Training Zones</tr>
                 <tr>
                     <th>Zone</th>
                     <th>Power</th>

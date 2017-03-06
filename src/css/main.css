@@ -93,7 +93,7 @@ textarea {
 #navbar-brand-img {
     float:left;
     margin-bottom: 10px;
-    border-radius: 50%;
+    border-radius: 60%;
     margin-right: 10px;
     overflow:hidden;
     margin-top: -12px;
@@ -111,8 +111,20 @@ textarea {
     width:26.66666%;
     margin-bottom: 2em;
 }
+.btn-submit{
+    margin-bottom: 1em;
+    margin-left:1em;
+
+}
 .ftp-lthr-labels {
     text-align: right;
+}
+
+/* Zone Table styles*/
+#table-title {
+    font-size:2em;
+    text-align: center;
+    font-weight:800;
 }
 .table {
     border:1px solid grey;
